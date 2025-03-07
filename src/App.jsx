@@ -2,10 +2,10 @@ import axios from "axios";
 import React, { useState } from "react";
 
 
-const API_KEY = "4a4c34ba00f4b374519ff5190a9e8d20";
-const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
+const API_KEY =import.meta.env.VITE_NEXT_PUBLIC_WEATHER_API_KEY;
+const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${API_KEY}`;
 
-export default function WeatherApp() {
+export default function App() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
@@ -19,7 +19,7 @@ export default function WeatherApp() {
           units: "metric",
         },
       });
-      console.log(BASE_URL)
+      console.log(response.data)
       setWeather(response.data);
       setError(null);
     // eslint-disable-next-line no-unused-vars
@@ -46,7 +46,7 @@ export default function WeatherApp() {
       </div>
       {error && <p className="text-red-500">{error}</p>}
       {weather && (
-        <div className="bg-white p-6 rounded-lg shadow-md text-center">
+        <div >
           <h2 className="text-2xl font-bold">{weather.name}, {weather.sys.country}</h2>
           <p className="text-xl">{weather.weather[0].description}</p>
           <p className="text-4xl font-bold">{weather.main.temp}°C</p>
