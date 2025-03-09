@@ -1,12 +1,48 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Weather App
+This Weather App is built with React.js and uses Axios to fetch real-time weather data from the OpenWeatherMap API. It provides essential weather details like temperature, humidity, wind speed, and weather conditions based on the user's input city
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Features
+
+- City-Based Weather Search.
+- Weather Data Display
+- Dynamic Weather Icons.
+- Error Handling for Invalid City Names
+- Responsive UI with Tailwind CSS
+
+## Used packages/ technology
+
+# Frontend:
+- Vite-React
+- React Router Dom
+- Tailwind CSS
+- React Hook Form
+- React Icons
+- Axois
+- OpenWeatherMap API
+
+
+## Getting Started
+
+Follow these instructions to get a local copy of the Weather App website up and running on your machine for development and testing purposes:
+
+1. Clone the repository: git clone repository-link
+
+2. Install the dependencies: npm
+
+3. Set up environment variables: Create a .env file in the root directory. Define the necessary environment variables (e.g., API keys, etc.) in the .env file.
+
+4. Start the development server: npm run dev
+
+## Deployment
+To deploy it to a production environment, follow the deployment instructions specific to your hosting platform (e.g., vercel, Firebase, Render etc.).
+
+
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+Livesite Link:
+https://assignment-12-6f540.web.app/
