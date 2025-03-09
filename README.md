@@ -45,4 +45,4 @@ To deploy it to a production environment, follow the deployment instructions spe
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 Livesite Link:
-https://assignment-12-6f540.web.app/
+https://weather-condition-app-live.netlify.app/
